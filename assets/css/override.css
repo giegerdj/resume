@@ -38,11 +38,11 @@ h2,
 }
 
 .resume-sidenav > li > ul {
-  display: none;
+  display: none !important;
 }
 
 .resume-sidenav > li.active > ul {
-  display: block;
+  display: block !important;
 }
 
 .resume-sidenav > li.active > ul > li {
