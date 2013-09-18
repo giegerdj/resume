@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dave Gieger is a web app developer located in Boulder, CO">
     <meta name="author" content="Dave Gieger">
-
+    
     <title>Dave Gieger's Resume</title>
-
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:400,600' rel="stylesheet" type="text/css">
     <!-- Bootstrap core CSS -->
     <link href="assets/libs/bootstrap-3.0.0/css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,11 +26,23 @@
     
     <div class="jumbotron">
       <div class="container">
-        <h1>Dave Gieger is...</h1>
-        <p>
-          a <strong>web app developer</strong> in <strong>Boulder, CO</strong>, comfortable working across the entire
-          <strong>L(E|A)MP stack</strong>. He also thinks writing in the third person is kinda weird.
-        </p>
+        <div class="row">
+          <div class="col-md-9">
+            <h1>Dave Gieger is...</h1>
+              <p>
+                a <strong>web app developer</strong> in <strong>Boulder, CO</strong>, comfortable working across the entire
+                <strong>L(E|A)MP stack</strong>. He also thinks writing in the third person is kinda weird.
+              </p>
+          </div>
+          <!--
+          <div class="col-md-3 hidden-xs hidden-sm">
+            This guy!
+            <div>
+              <img src="/assets/images/dave.jpg" style="display: block;"/>
+            </div>
+          </div>
+          -->
+        </div>
       </div>
     </div>
 
@@ -41,7 +54,7 @@
             <ul class="nav resume-sidenav">
               <li class="active">
                 <a href="#work">Work Experience</a>
-                <ul class="nav">
+                <ul class="nav hidden-xs hidden-sm">
                   <li>
                     <a href="#work-room214">Room 214</a>
                   </li>
@@ -52,12 +65,15 @@
               </li>
               <li>
                 <a href="#projects">Projects (Fun &amp; Profit)</a>
-                <ul class="nav">
+                <ul class="nav hidden-xs hidden-sm">
                   <li>
                     <a href="#projects-profiler">Great Divide Elevation Profiler</a>
                   </li>
                   <li>
                     <a href="#projects-wp-notifier">WP Plugin Update Notifier</a>
+                  </li>
+                  <li>
+                    <a href="#projects-resume">My Resume</a>
                   </li>
                   <li>
                     <a href="#projects-shipps">Rental Condo Site</a>
@@ -66,7 +82,7 @@
               </li>
               <li>
                 <a href="#skills">Skills</a>
-                <ul class="nav">
+                <ul class="nav hidden-xs hidden-sm">
                   <li>
                     <a href="#skills-languages">Languages</a>
                   </li>
@@ -109,17 +125,23 @@
                 </div>
               </div>
               <p>
-                Developed interactive facebook applications, micro-sites, and landing pages from Photoshop designs
-                using CSS, javascript, PHP, and MySQL databases.
+                Developed interactive Facebook applications, micro-sites, and landing pages from Photoshop designs
+                using CSS, JavaScript, PHP, and MySQL databases.
               </p>
               <p>
-                Created and maintained a high-performance, fault-tolerant hosting solution on AWS for WordPress sites.
+                Created and maintained a high-performance, fault-tolerant hosting environment on AWS for
+                WordPress sites.
               </p>
               <p>
-                Consolidated legacy projects living on various hosting providers to AWS, reducing our hosting expenses by 50%.
+                Consolidated legacy projects living on various hosting providers to AWS, reducing our
+                hosting expenses by a large percent.
               </p>
               <p>
-                Migrated all web servers from CentOS + Apache to Ubuntu 12.04 + Nginx.
+                Migrated all web servers from CentOS + Apache to Ubuntu + Nginx.
+              </p>
+              <p>
+                Wrote scripts for automatic data snapshots - sending database dumps and zipped WordPress
+                upload directories to S3.
               </p>
               <div class="row">
                 <div class="col-md-10">
@@ -146,29 +168,45 @@
               <h3 id="projects-profiler">Great Divide Elevation Profiler</h3>
               <p>
                 <a class="btn btn-default" href="http://eatsleepridegreatdivide.com"> eatsleepridegreatdivide.com &raquo;</a>
+                <a class="btn btn-default" href="https://github.com/giegerdj/eat-sleep-ride"> github &raquo;</a>
               </p>
               <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.
+                Analyzed a large GPX dataset for the <a href="http://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/great-divide-mountain-bike-route/">Great Divide Mountain Bike Route</a>.
               </p>
-              <h3 id="projects-wp-notifier">WordPress Plugin Update Notifier <small>(yes, that's a working title)</small></h3>
+              <p>
+                Embedded the route onto a Google Map via the GMaps API (v3).
+              </p>
+              <p>
+                Created an intuitive UI to select portions of the route.
+              </p>
+              <p>
+                Wrote backend logic to generate elevation profiles and calculate elevation gain/loss values
+                for any portion.
+              </p>
+              <h3 id="projects-wp-notifier">WordPress Plugin Update Notifier <small>(a working title)</small></h3>
               <p>
                 <a class="btn btn-default" href="#" disabled="disabled"> in progress &raquo;</a>
               </p>
               <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.
+                Web app that lets developers subscribe to WordPress plugins and get notified when
+                new versions are released.  Inspired by frequent plugin vulerabilities.
+              </p>
+              <p>
+                Built as a single page app w/ Backbone.js and a REST API backend. 
+              </p>
+              <p>
+                Using this project to explore Backbone and RESTful principles.
               </p>
               <h3 id="projects-shipps">Shipp's Landing Rental Condo</h3>
               <p>
                 <a class="btn btn-default" href="http://shippslanding923.com"> shippslanding923.com &raquo;</a>
               </p>
               <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.
+                Designed and coded a simple website for a vacation rental property.
+              </p>
+              <p>
+                Originally developed w/ spaghetti PHP files (2008).  Later refactored to use an MVC framework
+                (CodeIgniter - holy overkill, batman!) and made to be responsive.
               </p>
             </div>
           </div>
@@ -178,60 +216,77 @@
                 <h2 id="skills">Skills</h2>
               </div>
               <h3 id="skills-languages">Languages</h3>
-              <p>
-                <ul>
-                  <li>
-                    <strong>PHP</strong>
-                  </li>
-                  <li>
-                    <strong>SQL</strong>
-                  </li>
-                  <li>
-                    <strong>HTML</strong>
-                  </li>
-                  <li>
-                    <strong>CSS</strong>
-                  </li>
-                  <li>
-                    <strong>JavaScript</strong>
-                  </li>
-                  <li>
-                    <strong>C++</strong>
-                  </li>
-                </ul>
-              </p>
+              <ul class="skill-gauge-list">
+                <!--
+                <li>
+                  <div class="gauge" id="gauge-english" data-title="English" data-value="95"></div>
+                </li>
+                 -->
+                <li>
+                  <div class="gauge" id="gauge-php" data-title="PHP" data-value="80"></div>
+                </li>
+                <li>
+                  <div class="gauge" id="gauge-html" data-title="HTML" data-value="80"></div>
+                </li>
+                <li>
+                  <div class="gauge" id="gauge-css" data-title="CSS" data-value="80"></div>
+                </li>
+                <li>
+                  <div class="gauge" id="gauge-js" data-title="JavaScript" data-value="70"></div>
+                </li>
+                <li>
+                  <div class="gauge" id="gauge-sql" data-title="SQL" data-value="60"></div>
+                </li>
+                <li>
+                  <div class="gauge" id="gauge-cpp" data-title="C++" data-value="30"></div>
+                </li>
+              </ul>
               <h3 id="skills-tools">Frameworks, Libraries, &amp; APIs</h3>
-               <p>
-                <ul>
-                  <li>
-                    <strong>jQuery</strong>
-                  </li>
-                  <li>
-                    <strong>WordPress</strong>
-                  </li>
-                  <li>
-                    <strong>Bootstrap</strong>
-                  </li>
-                  <li>
-                    <strong>Knockout.js</strong>
-                  </li>
-                  <li>
-                    <strong>Tachyon</strong>
-                  </li>
-                  <li>
-                    <strong>CodeIgniter</strong>
-                  </li>
-                  <li>
-                    <strong>Facebook Developer API</strong>
-                  </li>
-                  <li>
-                    <strong>Google Maps API</strong>
-                  </li>
-                </ul>
-              </p>
+              <ul class="tools-list">
+                <li>
+                  <a class="btn btn-default" href="http://jquery.com/">jQuery &raquo;</a>
+                </li>
+                <li>
+                  <a class="btn btn-default" href="http://wordpress.org/">WordPress &raquo;</a>
+                </li>
+                <li>
+                  <a class="btn btn-default" href="http://getbootstrap.com/">Bootstrap &raquo;</a>
+                </li>
+                <li>
+                  <a class="btn btn-default" href="http://knockoutjs.com/">Knockout.js &raquo;</a>
+                </li>
+                <li>
+                  <a class="btn btn-default" href="https://github.com/Mikushi/Tachyon/">Tachyon &raquo;</a>
+                </li>
+                <li>
+                  <a class="btn btn-default" href="http://ellislab.com/codeigniter/">CodeIgniter &raquo;</a>
+                </li>
+                <li>
+                  <a class="btn btn-default" href="http://phpactiverecord.org/">PHP ActiveRecord &raquo;</a>
+                </li>
+                <li>
+                  <a class="btn btn-default" href="https://developers.facebook.com/">Facebook Developer API &raquo;</a>
+                </li>
+                <li>
+                  <a class="btn btn-default" href="https://developers.google.com/maps/">Google Maps API &raquo;</a>
+                </li>
+                <li>
+              </ul>
               <h3 id="skills-misc">Misc. Stuff</h3>
               <p>
                 <ul>
+                  <li>
+                    <strong>Photoshop (chopping designs, creating spritesheets, minor twerks<!-- good catch! -->, etc.)</strong>
+                  </li>
+                  <li>
+                    <strong>Responsive Web Development</strong>
+                  </li>
+                  <li>
+                    <strong>Git &amp; GitHub</strong>
+                  </li>
+                  <li>
+                    <strong>Amazon Web Services</strong>
+                  </li>
                   <li>
                     <strong>Ubuntu Servers</strong>
                   </li>
@@ -239,16 +294,7 @@
                     <strong>Nginx &amp; Apache Configuration</strong>
                   </li>
                   <li>
-                    <strong>Amazon Web Services</strong>
-                  </li>
-                  <li>
-                    <strong>Photoshop (chopping designs, creating spritesheets, etc.)</strong>
-                  </li>
-                  <li>
                     <strong>Database Design</strong>
-                  </li>
-                  <li>
-                    <strong>Git &amp; GitHub</strong>
                   </li>
                 </ul>
               </p>
@@ -259,15 +305,13 @@
               <div class="page-header">
                 <h2 id="education">Education</h2>
               </div>
-              <h3>University of Dayton '11</h3>
-              <h4>
-                <p>
-                  BS in Computer Science
-                </p>
-                <p>
-                  Minor in Management Information Systems
-                </p>
-              </h4>
+              <p class="h3">University of Dayton '11</p>
+              <p class="h4">
+                BS in Computer Science
+              </p>
+              <p class="h4">
+                Minor in Management Information Systems
+              </p>
             </div>
           </div>
           <div class="row">
@@ -277,12 +321,24 @@
               </div>
               <p>
                 <ul>
-                  <li><strong>Server management tools (Chef or Puppet)</strong></li>
-                  <li><strong>Code deployment with Capistrano</strong></li>
-                  <li><strong>Backbone.js for single page apps</strong></li>
-                  <li><strong>RESTful API design</strong></li>
-                  <li><strong>Unit testing best practices</strong></li>
-                  <li><strong>Architecting scalable environments</strong></li>
+                  <li>
+                    <strong>Server management tools (Chef or Puppet)</strong>
+                  </li>
+                  <li>
+                    <strong>Code deployment with Capistrano</strong>
+                  </li>
+                  <li>
+                    <strong>Backbone.js for single page apps</strong>
+                  </li>
+                  <li>
+                    <strong>RESTful API design</strong>
+                  </li>
+                  <li>
+                    <strong>Unit testing best practices</strong>
+                  </li>
+                  <li>
+                    <strong>Architecting scalable environments</strong>
+                  </li>
                 </ul>
               </p>
             </div>
@@ -292,10 +348,16 @@
               <div class="page-header">
                 <h2 id="after-hours">After Hours</h2>
               </div>
+              <!--
+              =str_replace('Turtles', 'Bikes', 'I Like Turtles');
+              -->
               <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.
+                Mountain biking, road biking, bikepacking (think backpacking, but on a mountain bike),
+                working on side projects, reading tech blogs (<a href="https://news.ycombinator.com">Hacker News</a>,
+                <a href="http://highscalability.com">High Scalability</a>,  
+                <a href="https://37signals.com/svn/">Signals vs. Noise</a>), and other blogs
+                (<a href="http://fatcyclist.com">Fat Cyclist</a>,
+                <a href="http://mrmoneymustache.com">Mr. Money Mustache</a>).
               </p>
             </div>
           </div>
@@ -309,6 +371,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery-1.10.2.min.js"></script>
     <script src="assets/libs/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/raphael.2.1.0.min.js"></script>
+    <script src="assets/js/justgage.1.0.1.min.js"></script>
     <script src="assets/js/page.js"></script>
   </body>
 </html>

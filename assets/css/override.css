@@ -1,3 +1,26 @@
+body {
+  font-family: 'Titillium Web';
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2,
+.h2 {
+  font-weight: bold;
+}
+
 .resume-sidebar.affix {
   position: static;
 }
@@ -6,9 +29,12 @@
   margin-bottom: 0;
 }
 
+.resume-sidenav > li {
+  font-size: 15px;
+}
+
 .resume-sidenav > li.active > a {
   font-weight: bold;
-  font-size: 14px;
 }
 
 .resume-sidenav > li > ul {
@@ -20,7 +46,8 @@
 }
 
 .resume-sidenav > li.active > ul > li {
-  font-size: 12px;
+  margin-left: 8px;
+  font-size: 13px;
 }
 
 .resume-sidenav > li.active > ul > li.active {
@@ -30,6 +57,22 @@
 .top-header,
 .top-header h2 {
   margin-top: 0;
+}
+
+ul.skill-gauge-list > li {
+  display: inline-block;
+  width: 200px;
+  height: 160px;
+}
+
+ul.skill-gauge-list > li > .gauge {
+  width:100%;
+  height:100%;
+}
+
+ul.tools-list  > li {
+  display: inline-block;
+  margin: 0 16px 8px 0;
 }
 
 /* Show and affix the side nav when space allows it */
