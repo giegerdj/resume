@@ -43,7 +43,7 @@
         max: 100,
         title: title,
         titleFontColor: '#333333',
-        levelColors: ['#cccccc','#004400']
+        levelColors: ['#cccccc','#1A503B']
       });
     });
     
