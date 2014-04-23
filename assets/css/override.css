@@ -68,6 +68,11 @@ h2,
   font-size: 15px;
 }
 
+.nav > li a:hover,
+.nav > li a:focus {
+  background: none;
+}
+
 .resume-sidenav > li.active > a {
   font-weight: bold;
 }
