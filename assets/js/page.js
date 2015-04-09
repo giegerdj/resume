@@ -31,22 +31,6 @@
       })
     }, 100);
     
-    $.each($('.gauge'), function(index, el) {
-      var title = $(el).attr('data-title');
-      var id = $(el).attr('id');
-      var value = $(el).attr('data-value');
-      
-      var g = new JustGage({
-        id: id, 
-        value: value, 
-        min: 0,
-        max: 100,
-        title: title,
-        titleFontColor: '#333333',
-        levelColors: ['#cccccc','#1A503B']
-      });
-    });
-    
 });
 
 }(window.jQuery)
