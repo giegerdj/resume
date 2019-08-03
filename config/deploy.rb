@@ -9,7 +9,7 @@ set :stages, ["staging","production"]
 set :default_stage, "staging"
 
 set :ssh_options, {
-    :user =>  "www-data",
+    :user =>  "forge",
     :forward_agent => true
 }
 

@@ -1,11 +1,11 @@
 
-role :web, "p.davegieger.com"
-role :app, "p.davegieger.com"
-role :db, "p.davegieger.com", :primary => true
+role :web, "forge-secondary.davegieger.com"
+role :app, "forge-secondary.davegieger.com"
+role :db, "forge-secondary.davegieger.com", :primary => true
 
-set :deploy_to, "/var/www/html/master/resume/"
+set :deploy_to, "/home/forge/resume.davegieger.com/"
 
-ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "prod_deploy_dsa")]
+# ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "prod_deploy_dsa")]
 
 set :branch, "master"
 
